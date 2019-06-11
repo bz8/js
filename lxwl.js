@@ -35,8 +35,12 @@ if (registed()) {
 
 // 填写并提交按钮
 function btnSplitSubmit_Onclick() {
+	// 调用填写按钮
 	btnSplit_Onclick();
+	// 调用提交按钮
 	onpost_plugin();
+	// 滚动到提交按钮
+	document.getElementById('js').scrollIntoView();
 }
 
 // 填写按钮
@@ -91,6 +95,7 @@ function btnSplit_Onclick() {
   }
 }
 
+// 添加车辆辅助
 var mycars = new Array("20", "18", "16", "14", "12", "10", "8", "6", "5", "4", "3", "2", "1", "0.5");
 var idNumber = 1,
 id = "grid";
